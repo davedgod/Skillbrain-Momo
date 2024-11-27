@@ -1,0 +1,114 @@
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flexbox layout for 3 sections (25% - 50% - 25%) */
+.outer-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 25% left and right spaces */
+.left-space,
+.right-space {
+  width: 25%;
+  background-color: white;
+}
+
+/* 50% content area */
+.content {
+  width: 50%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: #003366;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile section styling */
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Space between profile header and content */
+}
+
+.profile-img {
+  display: block;
+  margin-right: 20px; /* Space between image and name */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  /* Ensure the image is visible by giving a top margin */
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.profile-name {
+  font-size: 20px;
+  color: #003366;
+  display: flex;
+  align-items: center; /* Align name vertically with the center of the image */
+}
+
+/* Styling for text and sections */
+h4 {
+  margin-bottom: 10px;
+  color: #003366;
+  text-align: center; /* Center text */
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+p,
+ul {
+  margin-bottom: 15px;
+  text-align: center; /* Center text */
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.location-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.location-link:hover {
+  text-decoration: underline;
+}
+
+/* Description section styling */
+.description-section h4 {
+  margin-top: 20px;
+  color: #003366;
+  text-align: center; /* Center text */
+}
+
+.description-section hr {
+  margin: 10px 0;
+}
+
+.description-section ul {
+  padding-left: 20px;
+  text-align: center; /* Center list items */
+}
